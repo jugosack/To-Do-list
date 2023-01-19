@@ -1,0 +1,9 @@
+body {
+  background-color: bisque;
+}
+
+#input-task {
+  border: none;
+  width: 100%;
+  height: 100%;
+}
