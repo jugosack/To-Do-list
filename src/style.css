@@ -1,7 +1,9 @@
 body {
-    background-color: bisque;
+  background-color: bisque;
 }
 
-.hello {
-    color: red;
-  }
+#input-task {
+  border: none;
+  width: 100%;
+  height: 100%;
+}
