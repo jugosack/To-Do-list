@@ -1,2 +1,3 @@
 # .gitignore
 node_modules/
+echo -e "\e[1;32m
