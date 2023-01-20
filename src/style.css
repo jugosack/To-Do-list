@@ -1,9 +1,94 @@
 body {
-  background-color: bisque;
+  background-color: whitesmoke;
 }
 
-#input-task {
-  border: none;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;&display=swap');
+
+* {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.hide {
+  display: none !important;
+}
+
+.container {
+  max-width: 500px;
+  margin-inline: auto;
+  margin-top: 50px;
+  box-shadow: 0 11px 75px -3px rgba(0, 0, 0, 0.63);
+  -webkit-box-shadow: 0 11px 75px -3px rgba(0, 0, 0, 0.63);
+  -moz-box-shadow: 0 11px 75px -3px rgba(0, 0, 0, 0.63);
+}
+
+.todo_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 15px;
+}
+
+.todo_form {
+  position: relative;
+  padding: 5px 15px;
+}
+
+.todo {
   width: 100%;
-  height: 100%;
+  border: none;
+  padding: 15px 0;
+  outline: 0;
+  font-style: italic;
+}
+
+.icon_enter {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.todolist {
+  padding: 0;
+}
+
+.todolist > li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 15px;
+  border-bottom: 1px solid gray;
+}
+
+.todolist > li > div {
+  display: flex;
+}
+
+.todolist > li > div > input[type=text] {
+  padding: 20px;
+  outline: 0;
+  border: 0;
+  width: 240px;
+  margin-left: 15px;
+  background-color: transparent;
+}
+
+.todolist > li > button {
+  background: none;
+  border: 0;
+  outline: 0;
+}
+
+.yellow_color {
+  background-color: rgba(253, 253, 172, 0.837);
+}
+
+.clear_btn {
+  padding: 30px;
+  font-size: 15px;
+  color: black;
+  outline: 0;
+  border: 0;
+  background-color: bisque;
+  text-align: center;
 }
