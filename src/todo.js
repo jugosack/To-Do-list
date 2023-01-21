@@ -2,6 +2,7 @@ import data from './storage.js';
 
 // eslint-disable-next-line import/no-mutable-exports
 let todos = JSON.parse(data) || [];
+
 class Todo {
   constructor(id, description) {
     this.id = id;
@@ -20,6 +21,11 @@ class Todo {
   }
 
   static saveTolocalStorage() {
+    localStorage.setItem('todos', JSON.stringify(todos));
+  }
+
+  static setTolocalStorage(newTodos) {
+    todos = newTodos;
     localStorage.setItem('todos', JSON.stringify(todos));
   }
 }
