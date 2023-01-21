@@ -94,7 +94,7 @@
 
 ## Deploy my website with github pages":
 
-[link to todo-list: ]()
+[link to todo-list:](https://jugosack.github.io/To-Do-list/dist)
 
 ## - Loom video link:
 
