@@ -2,7 +2,6 @@ import data from './storage.js';
 
 // eslint-disable-next-line import/no-mutable-exports
 let todos = JSON.parse(data) || [];
-
 class Todo {
   constructor(id, description) {
     this.id = id;
@@ -13,11 +12,12 @@ class Todo {
   add() {
     const { id, description, completed } = this;
     const newTodo = { id, description, completed };
-    todos.push(newTodo);
+    return todos.push(newTodo);
   }
 
   static remove(id) {
     todos = todos.filter((todo) => Number(todo.id) !== +id);
+    return todos;
   }
 
   static saveTolocalStorage() {
