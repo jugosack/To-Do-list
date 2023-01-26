@@ -11,7 +11,7 @@ describe('todo', () => {
     expect(typeof addTodo(id + 1, desc)).toBe('number');
   });
 
-  it('should return the desc for a specific id', () => {
+ it('should return the desc for a specific id', () => {
     expect(todos[id].description).toBe(desc);
   });
 
