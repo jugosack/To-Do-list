@@ -2,6 +2,7 @@ import data from './storage.js';
 
 // eslint-disable-next-line import/no-mutable-exports
 let todos = JSON.parse(data) || [];
+
 class Todo {
   constructor(id, description) {
     this.id = id;
