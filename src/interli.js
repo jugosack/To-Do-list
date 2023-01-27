@@ -3,12 +3,8 @@ import loadTodo from './todo_loader.js';
 
 const buttonClear = document.querySelector('.clear_btn');
 
-const myFunct = (todo, index) => {
-  todo.id = index;
-};
-
 const updateIndex = () => {
-  todos.forEach(myFunct);
+  todos.forEach((todo, index) => { todo.id = index; });
   Todo.saveTolocalStorage();
 };
 
